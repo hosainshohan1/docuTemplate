@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>docuTemplate</title>
+	<title></title>
 </head>
 <body>
-	<div>
-		<h1>Hello World!</h1>	
-	</div>
+<h5>This is a html file</h5>
 </body>
 </html>
