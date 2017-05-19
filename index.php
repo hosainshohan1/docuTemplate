@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>docuTemplate</title>
 </head>
 <body>
 <h5>This is a html file</h5>
