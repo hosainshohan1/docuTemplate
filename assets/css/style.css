@@ -1,9 +1,9 @@
-.header{
-	background-color: #C6E9EE;
-}
-
+	.header{
+		background-color: #C6E9EE;
+	}
     body,html{
 		height: 100%;
+		font-family: Georgia, serif;
 	}
 
 	/* remove outer padding */
@@ -34,6 +34,11 @@
 
 	/*small/medium side display*/
 	@media (min-width: 768px) {
+		.stuck{
+			position: fixed;
+		    width: 180px;
+		    overflow-y: auto;
+		}
 
 		/*Allow main to be next to Nav*/
 		.main{
