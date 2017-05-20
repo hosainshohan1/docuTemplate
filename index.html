@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
 
     <title>VenManager V1.0.1</title>
 
@@ -16,7 +16,7 @@
   </head>
   <body>
 	<!-- test -->
-	<nav class="navbar navbar-inverse sidebar stuck" role="navigation">
+	<nav class="navbar navbar-inverse sidebar stuck navbar-fixed-top" role="navigation">
 	    <div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -32,35 +32,16 @@
 			<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#start">Start<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-					<li ><a href="#features">Features<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
-					<li ><a href="#installation">Installation<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
-						<ul class="dropdown-menu forAnimate" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-							<li class="divider"></li>
-							<li><a href="#">One more separated link</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-					<li ><a href="#">Profile<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
-					<li ><a href="#">Messages<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
-						<ul class="dropdown-menu forAnimate" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-							<li class="divider"></li>
-							<li><a href="#">One more separated link</a></li>
-						</ul>
-					</li>
+					<li ><a href="#features">Features<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon glyphicon-th-list"></span></a></li>
+					<li ><a href="#installation">Installation<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon glyphicon-cog"></span></a></li>
+					<li ><a href="#initial-login">Initial Login<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon glyphicon-user"></span></a></li>
+					<li ><a href="#admin-dashboard">Admin Dashboard<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-dashboard"></span></a></li>
+					<li ><a href="#add">Add<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-plus"></span></a></li>
+					<li ><a href="#purchase">Purchase<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-briefcase"></span></a></li>
+					<li ><a href="#sales">Sales<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-shopping-cart"></span></a></li>
+					<li ><a href="#ledgers">Ledgers<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-duplicate"></span></a></li>
+					<li ><a href="#reports">Reports<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
+					<li ><a href="#settings">Settings<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-wrench"></span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -100,13 +81,16 @@
 				    <li>Invoice Generating</li>
 				    <li>Inventory Management</li>
 				    <li>Expense Management</li>
+				    <li>Damage Management</li>
 				    <li>To Be Stocked Out Product Alert</li>
 				    <li>Graphical Reports</li>
+				    <li>Print & PDF Download</li>
 				    <li>Multi User Creation</li>
 				    <li>Multiple Currencies</li>
 				    <li>General Settings</li>
 				</ul>
-			</div><div id="installation">
+			</div>
+			<div id="installation">
 				<h2>Installation</h2><hr>
 				<h3>Server Requirements</h3>
 				<ul type="disc">
@@ -128,15 +112,15 @@
 					    <ul>
 						  <li>
 						  	Press Settings File Manager<br>
-						  	<img src="assets/screenshots/dotfile1.PNG" width="100%">
+						  	<img class="screenshot" src="assets/screenshots/dotfile1.PNG">
 						  </li>
 						  <li>
 						  	Tick Show Hidden Files (dotfiles)<br>
-						  	<img src="assets/screenshots/dotfile2.PNG" width="100%">
+						  	<img class="screenshot" src="assets/screenshots/dotfile2.PNG">
 						  </li>
 						  <li>
 						  	You will see your .env file<br>
-						  	<img src="assets/screenshots/dotfile3.PNG" width="100%">
+						  	<img class="screenshot" src="assets/screenshots/dotfile3.PNG">
 						  </li>
 						</ul>
 					<!-- end-Sub-items -->
@@ -144,6 +128,96 @@
 				    <li>Open the .env file and change value of "DB_DATABASE,DB_USERNAME,DB_PASSWORD"</li>
 				    <li>That's it!</li>
 				</ul>
+			</div>
+			<div id="initial-login">
+				<h2>Initial Login</h2><hr>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<h3>Login Infomation</h3>
+							</div>
+							<div class="panel-body">
+								<h4>Admin Login</h4>
+								User : admin@admin.com<br>
+								Password : 123456<br><br>
+
+								<h4>User Login</h4>
+								User : user123<br>
+								Password : 123456<br>
+							</div>
+						</div>
+					</div>
+					<img class="screenshot" src="assets/screenshots/1.PNG">
+				</div>
+			</div>
+			<div id="admin-dashboard">
+				<h2>Admin Dashboard</h2><hr>
+				<p>
+					<b>Admin Dashboard :</b> Admin are be able to see some system status on their dashboard page and can see how many suppliers, customers, users are registered to the system.
+				</p>
+				<img class="screenshot" src="assets/screenshots/2.jpg">
+				<p>
+					<b>Graphical Reports :</b> Last 7 days sale, Customer Report, Expense Report, Sales Report.
+				</p>
+				<img class="screenshot" src="assets/screenshots/3.jpg"><br><br>
+				<img class="screenshot" src="assets/screenshots/4.jpg"><br><br>
+				<img class="screenshot" src="assets/screenshots/5.jpg"><br><br>
+				<img class="screenshot" src="assets/screenshots/6.jpg">
+			</div>
+			<div id="add">
+				<h2>Add</h2><hr>
+				<h3>Add Suppliers</h3>
+				<img class="screenshot" src="assets/screenshots/7.jpg">
+				<h3>Add Categories</h3>
+				<img class="screenshot" src="assets/screenshots/8.jpg">
+				<h3>Add Products</h3>
+				<img class="screenshot" src="assets/screenshots/9.jpg">
+				<h3>Add Customers</h3>
+				<img class="screenshot" src="assets/screenshots/10.jpg">
+				<h3>Add Expense</h3>
+				<img class="screenshot" src="assets/screenshots/11.jpg">
+				<h3>Add Damage</h3>
+				<img class="screenshot" src="assets/screenshots/12.jpg">
+				<h3>Add User</h3>
+				<img class="screenshot" src="assets/screenshots/12a.jpg">
+			</div>
+			<div id="purchase">
+				<h2>Purchase</h2><hr>
+				<img class="screenshot" src="assets/screenshots/13.jpg">
+			</div>
+			<div id="sales">
+				<h2>Sales</h2><hr>
+				<p>
+					<b>Invoice :</b> Invoice creation is much easier with VenManager.
+				</p>
+				<img class="screenshot" src="assets/screenshots/14.jpg">
+			</div>
+			<div id="ledgers">
+				<h2>Ledgers</h2><hr>
+				<h3>Suppliers Ledgers</h3>
+				<img class="screenshot" src="assets/screenshots/15.jpg">
+				<h3>Individual Supplier History</h3>
+				<img class="screenshot" src="assets/screenshots/15a.jpg">
+				<h3>Individual Supplier Payment</h3>
+				<img class="screenshot" src="assets/screenshots/15b.jpg">
+				<h3>Customers Ledgers</h3>
+				<img class="screenshot" src="assets/screenshots/16.jpg">
+				<h3>Individual Customer Payment</h3>
+				<img class="screenshot" src="assets/screenshots/16a.jpg">
+			</div>
+			<div id="reports">
+				<h2>Reports</h2><hr>
+				<h3>Purchase Report</h3>
+				<img class="screenshot" src="assets/screenshots/17.jpg">
+				<h3>Sales Report</h3>
+				<img class="screenshot" src="assets/screenshots/18.jpg">
+				<h3>Sales Details</h3>
+				<img class="screenshot" src="assets/screenshots/19.jpg">
+			</div>
+			<div id="settings">
+				<h2>General Settings</h2><hr>
+				<img class="screenshot" src="assets/screenshots/20.jpg">
 			</div>
 		</div>
 	<!-- end-Content Here -->
