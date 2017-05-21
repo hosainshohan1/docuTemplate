@@ -6,9 +6,13 @@
 		border: 1px solid #999;
 		border-radius: 5px;
 	}
+	@import url('https://fonts.googleapis.com/css?family=Raleway');
     body,html{
 		height: 100%;
-		font-family: Georgia, serif;
+		font-family: 'Raleway', sans-serif;
+	}
+	p,li{
+		font-size: 17px;
 	}
 
 	/* remove outer padding */
@@ -19,6 +23,9 @@
 
 	/*Remove rounded coners*/
 
+	/*start image UL*/
+
+	/*start image UL*/
 	nav.sidebar.navbar {
 		border-radius: 0px;
 	}

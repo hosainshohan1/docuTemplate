@@ -22,4 +22,9 @@
 			height2 = $('.main').height()
   			htmlbodyHeightUpdate()
 		});
+
+		$(".clicked li").click(function(){
+			 $(this).siblings().removeClass("active");
+			$(this).toggleClass("active");
+		});
 	});

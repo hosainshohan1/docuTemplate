@@ -26,11 +26,11 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">VenManager V1.0.1</a>
+				<a class="navbar-brand" href="#"><h5>VenManager V1.0.1</h5></a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav clicked">
 					<li class="active"><a href="#start">Start<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
 					<li ><a href="#features">Features<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon glyphicon-th-list"></span></a></li>
 					<li ><a href="#installation">Installation<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon glyphicon-cog"></span></a></li>
@@ -41,7 +41,7 @@
 					<li ><a href="#sales">Sales<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-shopping-cart"></span></a></li>
 					<li ><a href="#ledgers">Ledgers<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-duplicate"></span></a></li>
 					<li ><a href="#reports">Reports<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
-					<li ><a href="#settings">Settings<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-wrench"></span></a></li>
+					<li ><a href="#settings">Settings & More<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-wrench"></span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -105,28 +105,29 @@
 				<ul type="square">
 				    <li>Please upload the <b>VenManager-V1.0.1.zip</b> file to the hosting server</li>
 				    <li>Once uploaded extract it to your desire place</li>
-				    <li>Then create database and import public/db/database.sql</li>
-				    <li>Open extracted directory and look at the root there you have a file called .env</li>
-				    <li>If you didn't find the .env file then follow below insturctions</li>
+				    <li>Then create database and import <b> public/db/database.sql</b></li>
+				    <li>Open extracted directory and look at the root there you have a file called <b>.env</b></li>
+				    <li>If you didn't find the <b>.env</b> file then follow below insturctions</li>
 					<!-- Sub-items -->
 					    <ul>
-						  <li>
-						  	Press Settings File Manager<br>
+						  <li style="margin-top:4%;">
+						  	Press <b>Settings</b> File Manager<br>
 						  	<img class="screenshot" src="assets/screenshots/dotfile1.PNG">
 						  </li>
-						  <li>
-						  	Tick Show Hidden Files (dotfiles)<br>
+						  <li style="margin-top:4%;">
+						  	<b>Tick Show Hidden Files (dotfiles)</b><br>
 						  	<img class="screenshot" src="assets/screenshots/dotfile2.PNG">
 						  </li>
-						  <li>
-						  	You will see your .env file<br>
+						  <li style="margin-top:4%;">
+						  	You will see your <b>.env </b> file<br>
 						  	<img class="screenshot" src="assets/screenshots/dotfile3.PNG">
 						  </li>
 						</ul>
 					<!-- end-Sub-items -->
 				    
-				    <li>Open the .env file and change value of "DB_DATABASE,DB_USERNAME,DB_PASSWORD"</li>
-				    <li>That's it!</li>
+				    <li style="margin-top:4%;">Open the <b>.env </b> file and change value of <b>"DB_DATABASE, DB_USERNAME, DB_PASSWORD"</b> </li>
+
+				    <li> <b>That's it! </b></li>
 				</ul>
 			</div>
 			<div id="initial-login">
@@ -139,31 +140,37 @@
 							</div>
 							<div class="panel-body">
 								<h4>Admin Login</h4>
-								User : admin@admin.com<br>
-								Password : 123456<br><br>
+								<b>User :</b> admin@admin.com<br>
+								<b>Password :</b> abc@123<br><br>
 
 								<h4>User Login</h4>
-								User : user123<br>
-								Password : 123456<br>
+								<b>User :</b> user@user.com<br>
+								<b>Password :</b> abc@123<br>
 							</div>
 						</div>
+						<br />
 					</div>
-					<img class="screenshot" src="assets/screenshots/1.PNG">
 				</div>
+				<h4>User Login Interface</h4> <br/>
+				<img class="screenshot" src="assets/screenshots/1.PNG">
 			</div>
 			<div id="admin-dashboard">
 				<h2>Admin Dashboard</h2><hr>
 				<p>
-					<b>Admin Dashboard :</b> Admin are be able to see some system status on their dashboard page and can see how many suppliers, customers, users are registered to the system.
+					<b>Admin Dashboard :</b> Admin are being able to see some system status on their dashboard page and can see how many suppliers, customers, users are registered to the system.
 				</p><br>
 				<img class="screenshot" src="assets/screenshots/2.jpg"><br><br><br>
 				<p>
-					<b>Graphical Reports :</b> Last 7 days sale, Customer Report, Expense Report, Sales Report.
+					<b>Graphical Reports :</b> Last 7 days sales, Customers Report, Expenses Report, Sales Report.
 				</p><br>
 				<img class="screenshot" src="assets/screenshots/3.jpg"><br><br>
 				<img class="screenshot" src="assets/screenshots/4.jpg"><br><br>
 				<img class="screenshot" src="assets/screenshots/5.jpg"><br><br>
 				<img class="screenshot" src="assets/screenshots/6.jpg">
+			</div>
+			<div class="text-center" style="margin-top: 4%; margin-bottom: 4%;">
+				<h1>All Features</h1>
+				<hr>
 			</div>
 			<div id="add">
 				<h2>Add</h2><hr>
@@ -218,6 +225,10 @@
 			<div id="settings">
 				<h2>General Settings</h2><hr>
 				<img class="screenshot" src="assets/screenshots/20.jpg">
+				<h3>Alert Notifications</h3>
+				<img class="screenshot" src="assets/screenshots/21.jpg">
+				<h3>Store Open & Close</h3>
+				<img class="screenshot" src="assets/screenshots/22.jpg">
 			</div>
 		</div>
 	<!-- end-Content Here -->
